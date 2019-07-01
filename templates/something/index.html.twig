@@ -73,10 +73,10 @@
 
     <section id="sample-form">
       <div class="container">
-        <form action="{{path ('upload')}}" method="POST" class="sample-form" role="form">
+        <form action="{{path ('purchase')}}" method="POST" class="sample-form" role="form">
           <div class="row">
             <div class="col-sm-5">
-              <input type="file" class="form-control" name="uploadFile"  accept=".epub,.pdf">
+              <input type="file" class="form-control" name="uploadFile" required="required" accept=".epub,.pdf">
             </div>
             <div class="col-sm-2">
               <input type="submit" name="uploadFile" class="btn btn-green sign-up-button sample-button-done" value="Upload">

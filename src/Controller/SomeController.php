@@ -26,17 +26,17 @@ class SomeController extends AbstractController{
     
      /**
       * @return Response
-     * @Route("/upload", name="upload")
+     * @Route("/purchase", name="purchase")
      */
-    public function uploadFile(){
-        return $this-> render('something/upload.html.twig');
+    public function purchase(){
+        return $this-> render('something/purchase.html.twig');
     }
     /**
       * @return Response
-     * @Route("/purchase", name="purchase")
+     * @Route("/affix", name="affix")
      */
-    public function purchaseStamp(){
-        return $this-> render('https://paystack.com/pay/purchase-stamp');
+    public function affixStamp(){
+        return $this-> render('something/affix.html.twig');
     }
 }
 ?>

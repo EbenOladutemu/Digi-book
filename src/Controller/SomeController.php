@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SomeController extends AbstractController{
     /**
      * @return Response
-     * @Route("/", name="home")
+     * @Route("/")
      */
     public function home(){
         return $this-> render('something/index.html.twig');
@@ -18,7 +18,7 @@ class SomeController extends AbstractController{
 
      /**
       * @return Response
-     * @Route("/home")
+     * @Route("/home", name="home")
      */
     public function home2(){
         return $this-> render('something/index.html.twig');
